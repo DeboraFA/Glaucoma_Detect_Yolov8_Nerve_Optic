@@ -1,5 +1,6 @@
 pillow
 torch
+joblib
 opencv-python
 numpy
 streamlit==1.19.0
