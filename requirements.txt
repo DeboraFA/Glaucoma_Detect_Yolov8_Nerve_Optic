@@ -3,6 +3,7 @@ torch
 joblib
 opencv-python
 numpy
+ultralytics
 streamlit==1.19.0
 streamlit_webrtc==0.45.0
 imutils
