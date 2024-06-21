@@ -1,9 +1,16 @@
+xgboost
 pillow
 torch
+joblib
 opencv-python
 numpy
+<<<<<<< HEAD
 scipy==1.5.4
+=======
+ultralytics
+>>>>>>> cb5963c1118ebccfdca7c24b049a953f22ec7857
 streamlit==1.19.0
 streamlit_webrtc==0.45.0
 imutils
 matplotlib
+scikit-image
