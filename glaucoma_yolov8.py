@@ -27,6 +27,8 @@ def draw_contours(image, results_disc, results_cup):
 
     for result in results_disc:
         for bbox in result.boxes.xyxy:
+            best_disc = max(results_disc.boxes, key=lambda x: x.conf[0])
+
             x_min, y_min, x_max, y_max = map(int, bbox.tolist())
             # Desenhar a elipse na imagem
             center_x, center_y, semi_axis_x, semi_axis_y = contours_(x_min, y_min, x_max, y_max)
@@ -35,9 +37,11 @@ def draw_contours(image, results_disc, results_cup):
             cnts_disc = cv2.findContours(mask_disc, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             cnts_disc = imutils.grab_contours(cnts_disc)
             cnt_disc = max(cnts_disc, key=cv2.contourArea)
+
     mask_cup = np.zeros((altura, largura), dtype=np.uint8)
     for result2 in results_cup:
         for bbox2 in result2.boxes.xyxy:
+            best_cup = max(result_cup.boxes, key=lambda x: x.conf[0])
             x_min2, y_min2, x_max2, y_max2 = map(int, bbox2.tolist())
 
             center_x2, center_y2, semi_axis_x2, semi_axis_y2 = contours_(x_min2, y_min2, x_max2, y_max2)
