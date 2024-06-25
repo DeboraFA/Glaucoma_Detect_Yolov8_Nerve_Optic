@@ -5,6 +5,8 @@ Este projeto utiliza modelos de aprendizado de máquina para detectar glaucoma e
 # Visão Geral
 O sistema processa uma imagem de nervo óptico, detecta as regiões de disco e copo, calcula métricas importantes e, finalmente, determina a presença de glaucoma.
 
+![Exemplo de aplicação da identificação do glaucoma em imagens do disco óptico](aplicacao_exemplo.png)
+
 # Requisitos
 -Python 3.7+
 
