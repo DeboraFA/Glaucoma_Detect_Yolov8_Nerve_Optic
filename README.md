@@ -7,14 +7,22 @@ O sistema processa uma imagem de nervo óptico, detecta as regiões de disco e c
 
 # Requisitos
 -Python 3.7+
+
 -Streamlit
+
 -OpenCV
+
 -joblib
+
 -imutils
+
 -numpy
-=Pillow
-=ultralytics (YOLO)
-=xgboost
+
+-Pillow
+
+-ultralytics (YOLO)
+
+-xgboost
 
 Você pode instalar todos os pacotes necessários com:
 
@@ -29,19 +37,9 @@ pip install -r requirements.txt
 
 **metricas_disco_escavacao.py:** Módulo com funções para calcular as métricas de escavação do disco óptico (CDR, RDR, NRR, etc.).
 
-# Uso
-Clone o repositório:
+# Execute o aplicativo Streamlit:
 
-bash
-Copiar código
-git clone https://github.com/seu_usuario/seu_projeto.git
-cd seu_projeto
-
-Execute o aplicativo Streamlit:
-streamlit run app.py 
-
-
-O execute a aplicação por meio do [link]{https://glaucomadetectyolov8nerveoptic.streamlit.app/}
+Execute a aplicação por meio do [link]{https://glaucomadetectyolov8nerveoptic.streamlit.app/}
 
 
 Carregue uma imagem do nervo óptico através da interface Streamlit e veja os resultados.
