@@ -26,7 +26,7 @@ O sistema processa uma imagem de nervo óptico, detecta as regiões de disco e c
 
 Você pode instalar todos os pacotes necessários com:
 
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 
 
 # Estrutura do Projeto
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 # Execute o aplicativo Streamlit:
 
-Execute a aplicação por meio do [link]{https://glaucomadetectyolov8nerveoptic.streamlit.app/}
+Execute a aplicação por meio do {https://glaucomadetectyolov8nerveoptic.streamlit.app/}
 
 
 Carregue uma imagem do nervo óptico através da interface Streamlit e veja os resultados.
